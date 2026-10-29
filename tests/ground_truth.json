@@ -1,0 +1,58 @@
+{
+  "e01": {
+    "action": "allow",
+    "reason": "ok"
+  },
+  "e02": {
+    "action": "allow",
+    "reason": "ok"
+  },
+  "e03": {
+    "action": "block",
+    "reason": "P1"
+  },
+  "e04": {
+    "action": "block",
+    "reason": "P1"
+  },
+  "e05": {
+    "action": "allow",
+    "reason": "ok"
+  },
+  "e06": {
+    "action": "block",
+    "reason": "P2"
+  },
+  "e07": {
+    "action": "block",
+    "reason": "P2"
+  },
+  "e08": {
+    "action": "allow",
+    "reason": "ok"
+  },
+  "e09": {
+    "action": "block",
+    "reason": "P4"
+  },
+  "e10": {
+    "action": "block",
+    "reason": "P4"
+  },
+  "e11": {
+    "action": "block",
+    "reason": "P3"
+  },
+  "e12": {
+    "action": "block",
+    "reason": "P3"
+  },
+  "e13": {
+    "action": "block",
+    "reason": "P0"
+  },
+  "e14": {
+    "action": "allow",
+    "reason": "ok"
+  }
+}

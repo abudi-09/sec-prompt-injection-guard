@@ -1,0 +1,32 @@
+schema_version = "1.3"
+
+[task]
+name = "samples/prompt-injection-guard"
+description = "Prompt-injection defense: implement a deterministic policy guard that blocks injected/unauthorized tool calls (exfiltration, destructive ops, path traversal) while allowing legitimate ones."
+authors = [{ name = "Sample Author" }]
+keywords = ["security", "prompt-injection", "agent-safety", "tool-use", "blue-team"]
+
+[metadata]
+difficulty = "medium"
+category = "cybersecurity"
+subcategory = "prompt-injection-defense"
+# Scalar reward in [0, 1] = fraction of held-out episodes decided correctly
+# (both action and reason must match).
+estimated_human_hours = 3
+
+[environment]
+network_mode = "no-network"
+cpus = 1
+memory_mb = 1024
+storage_mb = 1024
+workdir = "/app"
+
+[agent]
+# Budget ceiling (seconds); 72000 = 20h to match the FrontierSWE format. The
+# task itself is short — see [metadata] difficulty / estimated_human_hours.
+timeout_sec = 72000
+
+[verifier]
+environment_mode = "shared"
+network_mode = "no-network"
+timeout_sec = 300
